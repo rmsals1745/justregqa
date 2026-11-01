@@ -1,0 +1,11 @@
+{"q": "Must we tell customers they are talking to a GenAI chatbot?", "expect": ["hk-hkma-genai-consumer#3"]}
+{"q": "Can customers ask for a human instead of the AI?", "expect": ["hk-hkma-genai-consumer#5"]}
+{"q": "Who is accountable for AI decisions at a bank?", "expect": ["hk-hkma-genai-consumer#1"]}
+{"q": "Can our credit model treat some customer groups differently?", "expect": ["hk-hkma-genai-consumer#2"]}
+{"q": "How should customer data used by AI be protected?", "expect": ["hk-hkma-genai-consumer#4"]}
+{"q": "Do we need to check suitability before recommending a product?", "expect": ["hk-sfc-code-of-conduct#5.2"]}
+{"q": "What KYC information should we collect from a new client?", "expect": ["hk-sfc-code-of-conduct#5.1"]}
+{"q": "Is a written client agreement required?", "expect": ["hk-sfc-code-of-conduct#6.1"]}
+{"q": "What does the duty of diligence mean for a licensed person?", "expect": ["hk-sfc-code-of-conduct#2"]}
+{"q": "What is the stamp duty on property in Hong Kong?", "expect": []}
+{"q": "How do I apply for a work visa in Hong Kong?", "expect": []}

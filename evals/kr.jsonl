@@ -1,0 +1,13 @@
+{"q": "온라인으로 산 옷, 며칠 안에 반품할 수 있나요?", "expect": ["kr-ecommerce-act#17"]}
+{"q": "반품 배송비는 누가 내나요?", "expect": ["kr-ecommerce-act#18"]}
+{"q": "환불은 언제까지 해줘야 하나요?", "expect": ["kr-ecommerce-act#18"]}
+{"q": "받은 옷이 사진과 완전히 다르면 언제까지 반품되나요?", "expect": ["kr-ecommerce-act#17"]}
+{"q": "쇼핑몰에 사업자 정보를 어디까지 표시해야 하나요?", "expect": ["kr-ecommerce-act#13"]}
+{"q": "거짓 과장 광고로 소비자를 유인하면 어떻게 되나요?", "expect": ["kr-ecommerce-act#21", "kr-food-labeling-act#8"]}
+{"q": "다이어트 차가 당뇨 예방에 좋다고 광고해도 되나요?", "expect": ["kr-food-labeling-act#8"]}
+{"q": "건강기능식품 광고는 사전 심의를 받아야 하나요?", "expect": ["kr-food-labeling-act#10"]}
+{"q": "수입 과자 포장에 한글 표시가 꼭 필요한가요?", "expect": ["kr-food-labeling-act#4"]}
+{"q": "나트륨이나 당류 같은 영양성분을 표시해야 하나요?", "expect": ["kr-food-labeling-act#5"]}
+{"q": "후기 광고로 소비자를 오인하게 하면 문제가 되나요?", "expect": ["kr-food-labeling-act#8"]}
+{"q": "주식 양도소득세 세율은?", "expect": []}
+{"q": "아파트 전세 계약 갱신 요구권은?", "expect": []}

@@ -1,0 +1,16 @@
+{
+  "_": "Plain-language words people actually type -> the terms the rulebook uses. Query expansion only.",
+  "chatbot": ["generative AI", "AI system"],
+  "genai": ["generative AI"],
+  "bank": ["authorized institution"],
+  "kyc": ["know your client", "identity"],
+  "suitable": ["suitability"],
+  "recommend": ["recommendation", "solicitation"],
+  "recommending": ["recommendation", "solicitation"],
+  "contract": ["client agreement"],
+  "human": ["human intervention", "human-in-the-loop"],
+  "privacy": ["personal data"],
+  "bias": ["fairness", "discriminate"],
+  "disclose": ["disclosure", "inform"],
+  "tell": ["inform", "disclosure"]
+}

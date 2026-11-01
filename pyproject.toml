@@ -1,0 +1,20 @@
+[project]
+name = "justregqa"
+version = "0.1.0"
+description = "One engine, two rulebooks: a citation-first regulatory Q&A agent for Korea (MFDS / e-commerce) and Hong Kong (SFC / HKMA)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+regqa = "regqa.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["regqa"]
