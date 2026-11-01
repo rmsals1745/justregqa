@@ -1,16 +1,79 @@
 {
   "_": "Plain-language words people actually type -> the terms the rulebook uses. Query expansion only.",
-  "chatbot": ["generative AI", "AI system"],
-  "genai": ["generative AI"],
-  "bank": ["authorized institution"],
-  "kyc": ["know your client", "identity"],
-  "suitable": ["suitability"],
-  "recommend": ["recommendation", "solicitation"],
-  "recommending": ["recommendation", "solicitation"],
-  "contract": ["client agreement"],
-  "human": ["human intervention", "human-in-the-loop"],
-  "privacy": ["personal data"],
-  "bias": ["fairness", "discriminate"],
-  "disclose": ["disclosure", "inform"],
-  "tell": ["inform", "disclosure"]
+  "chatbot": [
+    "generative AI",
+    "AI system"
+  ],
+  "genai": [
+    "generative AI"
+  ],
+  "bank": [
+    "authorized institution"
+  ],
+  "kyc": [
+    "know your client",
+    "identity"
+  ],
+  "suitable": [
+    "suitability"
+  ],
+  "recommend": [
+    "recommendation",
+    "solicitation"
+  ],
+  "recommending": [
+    "recommendation",
+    "solicitation"
+  ],
+  "contract": [
+    "client agreement"
+  ],
+  "human": [
+    "human intervention",
+    "human-in-the-loop"
+  ],
+  "privacy": [
+    "personal data"
+  ],
+  "bias": [
+    "fairness",
+    "discriminate"
+  ],
+  "disclose": [
+    "disclosure",
+    "inform"
+  ],
+  "tell": [
+    "inform",
+    "disclosure"
+  ],
+  "protected": [
+    "protection measures",
+    "safeguard customer data"
+  ],
+  "launch": [
+    "validation",
+    "early stage of deploying"
+  ],
+  "opt out": [
+    "opt-out"
+  ],
+  "complaint": [
+    "complaints"
+  ],
+  "derivative": [
+    "derivatives",
+    "derivative products"
+  ],
+  "dispute": [
+    "FDRC",
+    "complaint"
+  ],
+  "black-box": [
+    "explainability"
+  ],
+  "hallucinat": [
+    "hallucination",
+    "lack of explainability"
+  ]
 }

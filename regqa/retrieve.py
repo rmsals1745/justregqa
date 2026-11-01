@@ -56,6 +56,7 @@ class Hit:
     clause: Clause
     score: float
     coverage: float   # share of the question's distinct terms found in this clause
+    matched: int = 0  # how many distinct question terms this clause contains
 
 
 class BM25Index:
@@ -86,7 +87,7 @@ class BM25Index:
                 denom = tf + self.k1 * (1 - self.b + self.b * self.lens[i] / self.avgdl)
                 s += self.idf.get(t, 0.0) * tf * (self.k1 + 1) / denom
             if s > 0:
-                cov = sum(1 for t in qset if t in d) / len(qset)
-                hits.append(Hit(self.clauses[i], s, cov))
+                matched = sum(1 for t in qset if t in d)
+                hits.append(Hit(self.clauses[i], s, matched / len(qset), matched))
         hits.sort(key=lambda h: h.score, reverse=True)
         return hits[:k]

@@ -89,6 +89,9 @@ class RegQA:
         self.top_k = top_k or int(os.environ.get("REGQA_TOP_K", "4"))
         self.min_coverage = (min_coverage if min_coverage is not None
                              else float(os.environ.get("REGQA_MIN_COVERAGE", "0.15")))
+        # One shared word ("apply", "Hong Kong") is not evidence: verbatim rulebooks are wordy
+        # enough that a short off-topic question can clear the coverage ratio on a single term.
+        self.min_terms = int(os.environ.get("REGQA_MIN_TERMS", "2"))
 
     @classmethod
     def from_pack(cls, pack: str, **kw) -> "RegQA":
@@ -101,7 +104,7 @@ class RegQA:
     def ask(self, question: str) -> Answer:
         lang = lang_of(question)
         hits = self.retrieve(question)
-        if not hits or hits[0].coverage < self.min_coverage:
+        if not hits or hits[0].coverage < self.min_coverage or hits[0].matched < self.min_terms:
             return Answer(question, NOT_FOUND[lang], hits, abstained=True)
 
         if llm.backend() == "none":

@@ -1,5 +1,5 @@
 {"q": "Must we tell customers they are talking to a GenAI chatbot?", "expect": ["hk-hkma-genai-consumer#3"]}
-{"q": "Can customers ask for a human instead of the AI?", "expect": ["hk-hkma-genai-consumer#5"]}
+{"q": "Can customers ask for a human instead of the AI?", "expect": ["hk-hkma-genai-consumer#2"]}
 {"q": "Who is accountable for AI decisions at a bank?", "expect": ["hk-hkma-genai-consumer#1"]}
 {"q": "Can our credit model treat some customer groups differently?", "expect": ["hk-hkma-genai-consumer#2"]}
 {"q": "How should customer data used by AI be protected?", "expect": ["hk-hkma-genai-consumer#4"]}
@@ -9,3 +9,30 @@
 {"q": "What does the duty of diligence mean for a licensed person?", "expect": ["hk-sfc-code-of-conduct#2"]}
 {"q": "What is the stamp duty on property in Hong Kong?", "expect": []}
 {"q": "How do I apply for a work visa in Hong Kong?", "expect": []}
+{"q": "Do we need a human-in-the-loop when launching a customer-facing GenAI chatbot?", "expect": ["hk-hkma-genai-consumer#1"]}
+{"q": "Must customers be able to opt out of using GenAI?", "expect": ["hk-hkma-genai-consumer#2"]}
+{"q": "What if we cannot offer an opt-out option for our GenAI service?", "expect": ["hk-hkma-genai-consumer#2"]}
+{"q": "Should we explain the limitations of our GenAI model to customers?", "expect": ["hk-hkma-genai-consumer#3"]}
+{"q": "Is the board responsible for GenAI-driven decisions or can we blame the vendor?", "expect": ["hk-hkma-genai-consumer#1"]}
+{"q": "Do the 2019 BDAI guiding principles also apply to generative AI?", "expect": ["hk-hkma-genai-consumer#scope-genai-in-customer-facing-applicati"]}
+{"q": "How should a bank deal with hallucination risk in GenAI outputs?", "expect": ["hk-hkma-genai-consumer#scope-genai-in-customer-facing-applicati", "hk-hkma-genai-consumer#1"]}
+{"q": "Can customers request a review of a decision made by an AI model?", "expect": ["hk-hkma-genai-consumer#3", "hk-hkma-genai-consumer#2"]}
+{"q": "Do we have to explain which data and factors our AI model used in a credit decision?", "expect": ["hk-hkma-genai-consumer#3"]}
+{"q": "Does the explainability requirement apply to our anti-money laundering monitoring system?", "expect": ["hk-hkma-genai-consumer#3"]}
+{"q": "Should a bank collect only the minimum personal data for its AI applications?", "expect": ["hk-hkma-genai-consumer#4"]}
+{"q": "Which PCPD guidance on AI should banks follow when using GenAI?", "expect": ["hk-hkma-genai-consumer#4"]}
+{"q": "Can a bank use GenAI to identify vulnerable customers?", "expect": ["hk-hkma-genai-consumer#proactive-use-of-bdai-and-genai-in-enhan"]}
+{"q": "Can an AI model deny someone basic banking services?", "expect": ["hk-hkma-genai-consumer#2"]}
+{"q": "Is a black-box model acceptable to the HKMA?", "expect": ["hk-hkma-genai-consumer#1"]}
+{"q": "Must we assess a client's knowledge of derivatives?", "expect": ["hk-sfc-code-of-conduct#5.1A"]}
+{"q": "A client with no derivatives knowledge wants to buy an OTC derivative without our recommendation. What should we do?", "expect": ["hk-sfc-code-of-conduct#5.1A"]}
+{"q": "What do we have to give clients before they buy a complex product?", "expect": ["hk-sfc-code-of-conduct#5.5"]}
+{"q": "What counts as a complex product?", "expect": ["hk-sfc-code-of-conduct#5.5"]}
+{"q": "How quickly must client complaints be handled?", "expect": ["hk-sfc-code-of-conduct#12.3"]}
+{"q": "Do we have to tell a client they can refer a dispute to the FDRC?", "expect": ["hk-sfc-code-of-conduct#12.3"]}
+{"q": "Does the client agreement have to be in Chinese?", "expect": ["hk-sfc-code-of-conduct#6.1"]}
+{"q": "How do we verify identity when opening an account online, not face to face?", "expect": ["hk-sfc-code-of-conduct#5.1"]}
+{"q": "What disclosure of material information do we owe clients?", "expect": ["hk-sfc-code-of-conduct#5"]}
+{"q": "Do we have to comply with exchange and clearing house rules?", "expect": ["hk-sfc-code-of-conduct#12.1"]}
+{"q": "What is the profits tax rate for companies in Hong Kong?", "expect": []}
+{"q": "How many days of annual leave are employees entitled to in Hong Kong?", "expect": []}

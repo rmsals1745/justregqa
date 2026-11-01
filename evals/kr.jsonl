@@ -11,3 +11,35 @@
 {"q": "후기 광고로 소비자를 오인하게 하면 문제가 되나요?", "expect": ["kr-food-labeling-act#8"]}
 {"q": "주식 양도소득세 세율은?", "expect": []}
 {"q": "아파트 전세 계약 갱신 요구권은?", "expect": []}
+{"q": "단순변심으로 산 신발도 환불 받을 수 있어요?", "expect": ["kr-ecommerce-act#17"]}
+{"q": "박스 포장 뜯었는데도 반품 되나요?", "expect": ["kr-ecommerce-act#17"]}
+{"q": "화장품 몇 번 써봤는데 교환이나 반품 가능한가요?", "expect": ["kr-ecommerce-act#17"]}
+{"q": "상세페이지에 반품 불가라고 적어 놨으면 진짜 반품 못 하나요?", "expect": ["kr-ecommerce-act#17"]}
+{"q": "불량품이 와서 반품하는데 왕복 택배비는 판매자가 내야 하죠?", "expect": ["kr-ecommerce-act#18"]}
+{"q": "환불을 계속 미루면 지연 이자도 받을 수 있나요?", "expect": ["kr-ecommerce-act#18"]}
+{"q": "신용카드로 결제했는데 반품하면 카드 취소는 어떻게 되나요?", "expect": ["kr-ecommerce-act#18"]}
+{"q": "결제하고 나서 판매자는 며칠 안에 물건을 보내야 하나요?", "expect": ["kr-ecommerce-act#15"]}
+{"q": "품절이라 못 보낸다는데 미리 낸 돈은 언제 돌려받나요?", "expect": ["kr-ecommerce-act#15"]}
+{"q": "배송 진행 상황을 확인할 수 있게 해줘야 하나요?", "expect": ["kr-ecommerce-act#15"]}
+{"q": "스마트스토어로 혼자 팔아도 통신판매업 신고해야 하나요?", "expect": ["kr-ecommerce-act#12"]}
+{"q": "통신판매업 신고한 주소가 바뀌면 다시 신고해야 하나요?", "expect": ["kr-ecommerce-act#12"]}
+{"q": "오픈마켓 입점 판매자가 사기 치면 플랫폼도 책임지나요?", "expect": ["kr-ecommerce-act#20-2", "kr-ecommerce-act#20"]}
+{"q": "중개 플랫폼은 판매자 신원정보를 소비자에게 알려줘야 하나요?", "expect": ["kr-ecommerce-act#20", "kr-ecommerce-act#20-2"]}
+{"q": "무료체험 끝나고 유료 정기결제로 넘어갈 때 동의 받아야 하나요?", "expect": ["kr-ecommerce-act#13"]}
+{"q": "미성년자랑 계약할 때 판매자가 알려줘야 하는 게 있나요?", "expect": ["kr-ecommerce-act#13"]}
+{"q": "주문도 안 했는데 물건 보내놓고 돈 내라고 하면 어떡하죠?", "expect": ["kr-ecommerce-act#21"]}
+{"q": "반품 못 하게 판매자가 전화번호 바꾸고 잠수 타면 불법인가요?", "expect": ["kr-ecommerce-act#21", "kr-ecommerce-act#17"]}
+{"q": "쇼핑몰이 고객 개인정보를 동의 없이 마음대로 써도 되나요?", "expect": ["kr-ecommerce-act#21"]}
+{"q": "과자 포장지에 꼭 들어가야 하는 표시 항목이 뭐예요?", "expect": ["kr-food-labeling-act#4"]}
+{"q": "식품에 소비기한 표시 안 하고 팔아도 되나요?", "expect": ["kr-food-labeling-act#4"]}
+{"q": "건강기능식품 라벨에는 뭘 적어야 하나요?", "expect": ["kr-food-labeling-act#4"]}
+{"q": "라면 나트륨 함량 비교 표시는 의무인가요?", "expect": ["kr-food-labeling-act#6"]}
+{"q": "식약처가 광고 근거 자료를 내라고 하면 며칠 안에 내야 하나요?", "expect": ["kr-food-labeling-act#9"]}
+{"q": "광고한 효과를 증명할 실증자료가 꼭 있어야 하나요?", "expect": ["kr-food-labeling-act#9"]}
+{"q": "일반 식품을 약처럼 광고해도 되나요?", "expect": ["kr-food-labeling-act#8"]}
+{"q": "경쟁사 제품을 깎아내리는 비교 광고는 괜찮나요?", "expect": ["kr-food-labeling-act#8"]}
+{"q": "식품 표시 위반으로 영업정지까지 받을 수 있나요?", "expect": ["kr-food-labeling-act#16"]}
+{"q": "부당 광고한 식품은 회수하거나 폐기해야 하나요?", "expect": ["kr-food-labeling-act#15"]}
+{"q": "표시 기준을 어긴 업체에 구청이 시정명령을 내릴 수 있나요?", "expect": ["kr-food-labeling-act#14"]}
+{"q": "퇴직금은 어떻게 계산하나요?", "expect": []}
+{"q": "자동차 사고 과실 비율은 어떻게 정해요?", "expect": []}
