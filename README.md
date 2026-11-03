@@ -7,8 +7,9 @@ documents, keep the engine.
 
 [한국어 설명은 아래](#한국어)
 
-> **Status: v0.1 — working skeleton.** The bundled documents are short *paraphrased demo
-> excerpts*, not official text. This is not legal advice. Always check the official source
+> **Status: v0.2 — working, measured.** The Korean rulebook is verbatim statute text from
+> law.go.kr (시행일 recorded per file); the Hong Kong rulebook is verbatim excerpts of the SFC
+> Code of Conduct and HKMA circulars. This is not legal advice. Always check the official source
 > (links are printed with every answer).
 
 ---
@@ -121,8 +122,9 @@ python -m regqa ask --pack kr "온라인으로 산 옷, 며칠 안에 반품할 
 python -m regqa eval
 ```
 
-> 동봉 문서는 **데모용 요약·의역**이며 법령 원문이 아니다. 법률 자문이 아니다 — 답마다 찍히는 공식 출처 링크로 원문을 확인할 것.
+> 한국어 문서는 **국가법령정보센터(law.go.kr) 법령 원문**(파일마다 시행일 기록), 홍콩 문서는 SFC·HKMA 공식 문서의 **원문 발췌**다. 법률 자문이 아니다 — 답마다 찍히는 공식 출처 링크로 원문을 확인할 것.
 
 ## License
 
-To be decided before the first public release.
+Code: MIT (see `LICENSE`).
+Bundled rulebooks: Korean statutes are not copyright-protected (저작권법 제7조). HK excerpts remain © SFC / HKMA, reproduced with attribution for non-commercial demonstration.
