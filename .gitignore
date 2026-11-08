@@ -5,3 +5,11 @@ __pycache__/
 .pytest_cache/
 dist/
 *.egg-info/
+.verifier.log
+.swarm_state.json
+.swarm_state.json*.tmp
+.swarm_write_probe*.tmp
+.swarm_events.jsonl
+*.py[cod]
+node_modules/
+.DS_Store
