@@ -3,6 +3,7 @@ import contextlib
 import importlib.util
 import io
 import runpy
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -56,7 +57,8 @@ class TestPdfText(unittest.TestCase):
     def test_joins_pages_and_tolerates_none(self):
         pages = [mock.Mock(extract_text=mock.Mock(return_value=t)) for t in ("alpha", None, "omega")]
         fake = mock.Mock(return_value=mock.Mock(pages=pages))
-        with mock.patch("pypdf.PdfReader", fake):
+        # pypdf is an optional install; pdf_text imports it lazily, so a stub module is enough.
+        with mock.patch.dict(sys.modules, {"pypdf": mock.Mock(PdfReader=fake)}):
             out = fetch_hk.pdf_text(Path("x.pdf"))
         self.assertIn("alpha", out)
         self.assertIn("omega", out)
