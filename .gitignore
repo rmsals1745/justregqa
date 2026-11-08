@@ -13,3 +13,5 @@ dist/
 *.py[cod]
 node_modules/
 .DS_Store
+
+corpora/hk/_full/
