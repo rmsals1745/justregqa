@@ -20,6 +20,7 @@ _STOP = {
     "the", "a", "an", "of", "to", "in", "on", "for", "and", "or", "is", "are", "be", "by",
     "what", "which", "who", "when", "how", "do", "does", "can", "must", "should", "if", "it",
     "with", "as", "at", "that", "this", "i", "we", "my", "our", "any", "there",
+    "hong", "kong",  # names the HK pack's jurisdiction; full-text clauses mention it incidentally
 }
 _KO_STOP = {  # question-ending bigrams that carry no legal meaning
     "무엇", "어떻", "떻게", "하나", "인가", "나요", "는지", "있나", "합니", "니까", "되나", "해도", "까지",

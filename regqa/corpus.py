@@ -85,6 +85,20 @@ def load_file(path: Path) -> list[Clause]:
     return clauses
 
 
+def _with_full(path: Path) -> list[Clause]:
+    """Short quotations from ``path``, replaced clause-by-clause by ``_full/<name>`` when fetched.
+
+    ``scripts/fetch_hk.py`` writes the official full text there (git-ignored); any clause it
+    lacks keeps the bundled short quotation, so the pack always loads.
+    """
+    short = load_file(path)
+    full_path = path.parent / "_full" / path.name
+    if not full_path.is_file():
+        return short
+    full = {c.clause_id: c for c in load_file(full_path)}
+    return [full.get(c.clause_id, c) for c in short]
+
+
 def list_packs() -> list[str]:
     return sorted(p.name for p in PACKS_DIR.iterdir() if p.is_dir())
 
@@ -98,7 +112,7 @@ def load_pack(pack: str) -> list[Clause]:
         if not folder.is_dir():
             raise SystemExit(f"unknown pack: {name!r} (available: {', '.join(list_packs())})")
         for f in sorted(folder.glob("*.md")):
-            out.extend(load_file(f))
+            out.extend(_with_full(f))
     return out
 
 

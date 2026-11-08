@@ -8,8 +8,9 @@ documents, keep the engine.
 [한국어 설명은 아래](#한국어)
 
 > **Status: v0.2 — working, measured.** The Korean rulebook is verbatim statute text from
-> law.go.kr (시행일 recorded per file); the Hong Kong rulebook is verbatim excerpts of the SFC
-> Code of Conduct and HKMA circulars. This is not legal advice. Always check the official source
+> law.go.kr (시행일 recorded per file); the Hong Kong rulebook ships short quotations (1-2 sentences per
+> clause, each with its official URL) of the SFC Code of Conduct and HKMA circulars, and
+> `scripts/fetch_hk.py` fetches the full official text locally. This is not legal advice. Always check the official source
 > (links are printed with every answer).
 
 ---
@@ -87,7 +88,7 @@ The sets are tiny and written by the author — treat them as a regression harne
 ## Sources and licensing
 
 - **KR**: statute text is verbatim from 국가법령정보센터 (law.go.kr); each file's front matter records the 시행일 and 법률 번호. Korean statutes are not copyright-protected (저작권법 제7조).
-- **HK**: verbatim *excerpts* of the SFC Code of Conduct (edition noted in the file) and HKMA circulars of 5 Nov 2019 and 19 Aug 2024, reproduced with attribution for non-commercial demonstration. © SFC / HKMA. Read the originals linked in each file; this repo is not legal advice.
+- **HK**: `corpora/hk/*.md` contain only *short quotations* (1-2 sentences per clause) of the SFC Code of Conduct (edition noted in the file) and the HKMA circulars of 5 Nov 2019 and 19 Aug 2024, each with a link to the official source; clause ids and headings are kept stable. The full text is not redistributed: `python scripts/fetch_hk.py` (needs `pip install pypdf`) downloads it from the official URLs into `corpora/hk/_full/` (git-ignored). Search uses `_full/` when present — clause by clause, falling back to the bundled quotation — and the quotations otherwise. © SFC / HKMA. Read the originals linked in each file; this repo is not legal advice.
 
 ## Adding a jurisdiction
 
@@ -98,7 +99,7 @@ The sets are tiny and written by the author — treat them as a regression harne
 
 ## Roadmap
 
-- [x] Official texts with version dates (KR: verbatim from law.go.kr; HK: verbatim excerpts of the SFC Code of Conduct and HKMA circulars).
+- [x] Official texts with version dates (KR: verbatim from law.go.kr; HK: short quotations with official URLs of the SFC Code of Conduct and HKMA circulars, full text fetched locally).
 - [ ] Automated ingestion (law.go.kr Open API, SFC / HKMA PDF parsing) instead of hand-picked articles.
 - [ ] Hybrid retrieval (BM25 + multilingual embeddings) and a reranker, measured against the same evals.
 - [ ] LLM-judged faithfulness eval (does each sentence follow from its cited clause?).
@@ -122,9 +123,9 @@ python -m regqa ask --pack kr "온라인으로 산 옷, 며칠 안에 반품할 
 python -m regqa eval
 ```
 
-> 한국어 문서는 **국가법령정보센터(law.go.kr) 법령 원문**(파일마다 시행일 기록), 홍콩 문서는 SFC·HKMA 공식 문서의 **원문 발췌**다. 법률 자문이 아니다 — 답마다 찍히는 공식 출처 링크로 원문을 확인할 것.
+> 한국어 문서는 **국가법령정보센터(law.go.kr) 법령 원문**(파일마다 시행일 기록), 홍콩 문서는 SFC·HKMA 공식 문서의 **짧은 인용(조항당 1~2문장) + 원문 URL** 만 담았고, 전체 원문은 `python scripts/fetch_hk.py` 로 공식 URL 에서 받아 `corpora/hk/_full/`(gitignore)에 저장하면 검색이 그것을 우선 쓴다. 법률 자문이 아니다 — 답마다 찍히는 공식 출처 링크로 원문을 확인할 것.
 
 ## License
 
 Code: MIT (see `LICENSE`).
-Bundled rulebooks: Korean statutes are not copyright-protected (저작권법 제7조). HK excerpts remain © SFC / HKMA, reproduced with attribution for non-commercial demonstration.
+Bundled rulebooks: Korean statutes are not copyright-protected (저작권법 제7조). HK files contain only short quotations (1-2 sentences per clause) with attribution and links to the official sources; the texts remain © SFC / HKMA, and the full texts are fetched by the user from the official URLs, not redistributed here.
